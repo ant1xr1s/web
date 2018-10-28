@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Пример</title>
+
+      <!-- Bootstrap -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="keywords" content="TEST">
+    <meta name="description" content="Не пересказать">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <script src="=//api.bitrix24.com/api/v1"></script>
+  <!--<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/x.y.z/jquery.min.js"></script>-->
+  <script type="text/javascript" scr="js/application.js"></script>
+
+  <script>
+
+      $(document).ready(function() {
+
+          BX24.init(function() {
+              app.displayCurrentUser('#user-name');
+          });
+      });
+  </script>
+  <div id="app" class="container-fluid">
+      <div class="alert alert-success" role="alert" id="user-name"><i class="fa fa-spinner fa-spin"></i></div>
+  </div>
+
+
+
+
+
+
+    <p>HelloWorld!!!</p>
+  </body>
+</html>
